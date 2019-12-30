@@ -1,0 +1,153 @@
+Switching to Linux in 2020. 
+
+So, the new decade's arrived and Windows 7's end of life approaches on
+January 14. As a holdout poweruser, you now have to make a tough decision.
+Continue using an unsupported operating system and hope nothing goes wrong or
+begrudgingly make the switch to Windows 10, with neither choice being
+particularly great. Thankfully, you have a third option: switch to Linux. 
+That way, you'll still get up-to-date software while not having to deal with
+Microsoft's current bullshit. 
+
+So if you've heard about Linux in the past and want to make the jump soon, I'll
+be guiding you through all of the necessary steps to get your system running
+and ready for gaming. 
+
+Before I get into that, I need to make a disclaimer. Linux is not Windows. It's
+a completely different operating system with its own design philosophies and
+nuances. So forget what you already know about Windows and come into Linux with
+an open mind, ready to relearn some of the basics. Now, you don't need to
+become a system administrator, but a brief understanding of how your computer
+works will make your life a lot easier, especially when troubleshooting.
+Strictly speaking, this isn't necessary and you can stick entirely to graphical
+menus, you to learn the essentials so you can play more games and further
+customize your desktop experience.     
+
+Part 0: Reasons Why
+
+So, why would you use Linux over Windows? Well, if you want up-to-date security
+updates, your only other choice is Windows 10. And if you're like me and
+despise that trashfire of an operating system, then Linux is your only
+alternative. 
+
+Secondly, it's free. You can legally download Linux at no cost and use it how
+you see fit, without dealing with Microsoft's licensing and arcane terms of
+service. 
+
+Finally, Linux generally has no bloatware. You install it without receiving
+constant advertisements for candry crush saga or dealing with cortana's
+nagging. While you can disable those, it's extremely annoying to get rid of all
+of the crap and telemetry pre-installed. Even then, Microsoft can them back in
+a future update, so get ready to deal with lots of uphill battles. Linux
+respects you by default and doesn't make you use a group policy editor or batch
+scripts to have some peace of mind. 
+
+The major downside to this is that Windows is much more widely supported, so
+you'll encounter some software bugs that aren't present on Microsoft's platform
+or have applications that flatout refuse to run on Linux. I generally haven't
+notice many, but they do exist. 
+
+Part 1: Selecting Your Distro
+
+For those of you that already know what flavor of Linux you want to run, feel
+free to skip this section. Otherwise, I highly recommend listening.
+
+Unlike Windows, there are multiple variations of Linux available, known
+collectively as distributions. While these "distros" function similarly under
+the hood, they can vary drastically in their included software, update cycles,
+desktop experiences, and so on. With such a large selection to pick from, I'm
+going to be curating my list to only include a handful of distros that I find
+to be user friendly. So I won't be discussing more advanced options like Arch,
+Void, or Gentoo. 
+
+The first recommendation I have is Pop!_OS. It's based on Ubuntu, but includes
+some great quality of life tweaks provided by its developer, System 76. The
+default desktop environment is called GNOME 3, which offers up a rather unique
+experience.  If you're not a fan, then you can install extensions to change
+functionality, such as adding in a more traditional start menu or a window bar.
+I will be listing some of these in their respective section as well as describe
+how to install them. 
+
+The second recommendation is Solus. Unlike Pop!_OS, it's a completely
+independent distribution that seeks to offer a curated desktop experience. Its
+flagship desktop enviroment is budgie, which offers a more traditional user
+interface than GNOME. This is my distro of choice, and my daily driver. It is
+leaner on software support than Ubuntu, but I find it to have the essentials,
+which tend to be more up to date. 
+
+Finally, I'll be covering Linux Mint. Out of all the distros mentioned on this
+list, it offers up an experience most similar to Windows 7. So if you don't
+want to have to deal with GNOME or want a more robust software repository, then
+Mint is a great choice. 
+
+Of course, there are many other fantastic flavors of Linux out there, such as
+Manjaro or Kubuntu, but I'll focus on those three for now, to keep this video
+rather short and accessible. 
+
+Part 2: Setup.
+
+To get started, all you need is a spare flash drive and an internet connection.
+For advanced users, you can go ahead and configure options in your
+motherboard's BIOS right now. I'd recommend disabling secure
+boot, so you don't run into any problems later on.  
+
+For me, I had press the delete key to enter my BIOS menu when booting my
+computer. A single press should be sufficient when you see your manufacturer
+splash screen logo, but it doesn't hurt to mash it. Once there, enter your
+settings menu, go to the security tab, and make sure that the trusted computing
+or secure boot option is disabled. This will vary from motherboard to
+motherboard, so you might have to look around for a bit. You can also change
+device boot priority while in your BIOS, so a flash drive can have precedence a
+hard drive, though this is not necessary. Save your changes and then reboot
+your computer.  
+
+While in Windows, navigate to the website of your linux distro of choice. Pop
+OS is located on system76.com/pop, Linux Mint is on linuxmint.com, and Solus is
+on getsol.us. Links will be provided in the video description. From here,
+navigate to the download page and choose the appropiate download. System 76
+provides different files based on your graphics card manufacturer, so be sure
+to choose the one that matches your current installed GPU. 
+
+For advanced users, you can go ahead and download the additional SHA256SUM
+file, which allows you to check the integrity of the operating system you just
+downloaded. This is not necessary by any means, but it guarantees that you got
+the right file and that nothing was damaged during the download. To validate
+the output of the iso file, use Windows' CertUtil in the command prompt to
+generate the checksum.  Type in certUtil -hashfile yourFilesFullPatch SHA256 to
+generate the appropriate output.  If it matches the one on your distro
+provider's website, then you're good to go. 
+
+From that here on, you'll need a program to burn the Linux iso file to a flash
+drive. Some notable programs include rufus or balenaEtcher. I'll be using the
+latter due to its simplicity. Keep in mind that this process will wipe the
+drive, so save all data that you don't want to lose. Once you're ready, select
+your iso file, then your thumb drive, and proceed to flashing.  
+
+Once you've finished with that, restart your computer. When you see the splash
+screen, hit the F11 key to enter the boot menu.  From here on, you can select
+your linux flash drive to boot on instead of your Windows installation. If you
+haven't adjusted boost priority in the BIOS, then you will boot into Windows by
+default, so do not forget to do this step. 
+
+Now, my motherboard manufacturer is MSI. Different companies can assign
+different hotkeys to the boot and BIOS menu, so be sure to consult your manual
+if they're not listed on the splash screen.
+
+After a short wait, you're taken into a live desktop environment. From here,
+you can play around with the UI and get used to it before making any
+committments. If you like what you've seen, then click the install icon and
+walk through the installer. You're generally given the option to select if you
+want to create a new Linux partition to coexist with your Windows 7 install, or
+dedicate the entire drive to Linux. Generally, it's a bit easier to do the
+latter option, but you lose all data on the drive.
+
+I'll be doing the second option, so if you'd like to follow along, be sure to
+back up all of your important files to another drive or to the cloud. 
+
+Once you've finished installing, you now have a brand new Linux machine. Feel
+free to play around with it and tweak your settings to your heart's content. 
+
+Part 3: Gaming
+
+Part 4: Advanced Linux 
+
+Part 5: Conclusion 
