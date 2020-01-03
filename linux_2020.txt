@@ -1,10 +1,10 @@
 Switching to Linux (From Windows) in 2020. 
 
-So, the new decade's arrived and Windows 7's end of life approaches on
-January 14. As a holdout poweruser, you now have to make a tough decision.
-Continue using an unsupported operating system and hope nothing goes wrong or
+So, the new decade's arrived and Windows 7's end of life approaches on January
+14. As a holdout poweruser, you now have to make a tough decision.  Continue
+using an unsupported operating system and hope nothing goes wrong or
 begrudgingly make the switch to Windows 10, with neither choice being
-particularly great. Thankfully, you have a third option: switch to Linux. 
+particularly great. Thankfully, you also have a third option: switch to Linux.
 That way, you'll still get up-to-date software while not having to deal with
 Microsoft's current bullshit. 
 
@@ -27,38 +27,46 @@ Part 0: Reasons Why
 So, why would you use Linux over Windows? I'll try to keep this list rather
 concise, so I'll avoid going into overly technical details.
 
-1). If you want up-to-date security updates, your only other choice is Windows
-10 besides a Hackintosh. If you're like me and despise Microsoft trashfire of
-an operating system, then Linux is your only alternative. Another benefit here
-is that anti-virus is generally not needed, due to Linux stricter file
-permissions system, and software repositories. As a result, you don't need to
-worry about Norton or McAfee hogging up your system's resources with a virus
-scan. 
+1). If you want up-to-date security updates, your only other choice besides
+Windows 10 is a Hackintosh. If you're like me and despise Microsoft's trashfire
+of an operating system, then Linux is your only real alternative for PC gaming.
+Another benefit here is that anti-virus is generally not needed, due to Linux
+having stricter file permissions system amd software repositories. As a result,
+you don't need to worry about Norton or McAfee hogging up resources that could
+be otherwise used for a game. 
 
-2). Linux is completely free. You can legally download it at no cost and
-use it how you see fit, without dealing with Microsoft's licensing and arcane
-terms of service. For all intents and purposes, every version of Linux is
-considered a "genuine" copy. Another thing to consider here is that important
-poweruser features aren't locked behind another paywall ( like Windows 10's
-offline bitlocker support and the group policy editor).  
+2). Linux is completely free. You can legally download it at no cost and use it
+how you see fit, without dealing with Microsoft's licensing and arcane terms of
+service. For all intents and purposes, every version of Linux is considered a
+"genuine" copy, so you don't need to deal with that headache. Another thing to
+consider here is that important poweruser features aren't locked behind another
+paywall ( like Windows 10's offline bitlocker support and the group policy
+editor).  
 
 
 3). Linux generally has no bloatware. You install it without receiving constant
-advertisements for candy crush saga or dealing with cortana's constantly
-nagging. And don't even get me started on all of the obnoxious telemetry baked
-into Windows 10 by default. While you can disable those to an extent if you're
-on a Pro version or higher, it's extremely annoying to get rid of all of the
+advertisements for candy crush saga or dealing with cortana's constant nagging.
+And don't even get me started on all of the obnoxious telemetry baked into
+Windows 10 by default. While you can disable those to an extent if you're on a
+Pro version or higher, it's extremely annoying to get rid of all of the
 pre-installed crap, as you have to mess around with the group policy editor,
-batch scripts, host files, and so on. Even then, Microsoft can add them back in
-a future update, so get ready to deal with lots of uphill battles and hours of
-configuring. On the other hand Linux respects you by default and doesn't make
-you do this shit to have some peace of mind. 
+batch scripts, host files, and so on. Even then, Microsoft can add everything
+back in a future update, so get ready to deal with lots of uphill battles. On
+the other hand, Linux respects you by default and doesn't make you jump through
+hoops to have some peace of mind. 
+
+4). Linux is everywhere. Though you might not see it on your desktop, it's the
+backbone of the internet, with Google, Amazon, and Facebook's servers running
+off of it. Teslas and Toyotas use automotive grade linux. If you have an
+Android phone, that runs off of linux. As a result of its wide enterprise use,
+there's a very good chance that your hardware will be supported out of the box,
+even if it's a more obscure piece of tech.
 
 That's not to say that Linux doesn't have its downsides, the major one being
 software support. While WINE is a great way to run Windows-exclusive programs,
-you might encounter software bugs that aren't on Microsoft's platform or have
-applications that refuse to work. I haven't noticed many of the latter example
-beyond games with anticheat or DRM, but they do exist. So if you have a
+you might encounter software bugs that aren't on Microsoft's platform. There
+are also applications that flat out refuse to work. I haven't noticed many of
+these beyond games with anticheat or DRM, but they do exist. So if you have a
 particular piece of software that does not work on Linux, it might be worth
 keeping around a Windows partition for that.
 
@@ -174,10 +182,206 @@ that aren't relevant to you.
 
 Part 3: Basic Gaming
 
-The basic gaming section is designed to be an introduction to keeping your
-software updated, installing drivers (for Nvidia users), and getting Steam
-installed. We'll also cover Steam play, but only talk about whitelisted titles. 
+This section explains how to keep your software updated, install  drivers (for
+Nvidia users), and setup Steam.  We'll also cover Steam play, but will only
+talk about officially whitelisted titles alongside native games.  
+
+Press the Windows key to launch the start menu (note: in Linux, this key is
+referred to as the super key).  From here, type in "software" and you should
+see something along the lines of Software Center or Software Manager appear. 
+
+Unlike on Windows, all of your software should be located and installed from
+this repository. That way, you can easily keep all of your programs up to date,
+and search for new ones as necessary. The concept of downloading an exe file
+online and installing it manually doesn't really exist on linux, so get used to
+finding all of your software here. There are other ways to install and manage
+your programs on Linux, but I'd only recommend looking into that if you're a
+more advanced user. 
+
+Now comes the point where you need to manager your drivers. If you use Intel
+and/or AMD hardware, then all you need to do is keep your Linux install
+up-to-date, as their drivers are included directly in system updates.
+Specifically, they're located in the linux kernel, so make sure that isn't too
+out of date. Nvidia users don't have it quite as easy, as their drivers aren't
+directly integrated into the operating system. By default, you should have
+something like the nouveau driver installed. While this is fine for browsing
+the net or watching videos, it's not suited for gaming. So you'll need to
+install the correct proprietary driver. Doing so manually isn't recommended due
+to how many choices you have. I'd recommend using your system's hardware
+drivers utility to automatically install the correct nvidia driver as it's the
+least painful way of doing so.
+
+Once you've updated your programs, it's time to get Steam setup. Thankfully,
+it's handily located in most software repositories, so all you need to do is
+look it up in the search bar. Once you've found the right package, click
+install and enter your password. At this point, I'd also recommend installing
+the Wine and winetricks packages, as those are also incredibly useful. From
+this point on, the Steam experience is nearly identical to that of Windows.
+Enter your account credentials and launch the client. Then, you're free to
+install and play any native or proton whitelisted titles such as Overload and
+My Friend Pedro. Just make sure that Steam Play is enabled in the settings
+menu. 
+
+And that's it. You've now got your rig setup for basic linux gaming. 
 
 Part 4: Advanced Gaming 
 
+Okay, you've exhausted the whitelist and want to branch out. Perhaps you want
+to play a game on GOG or try out some other games.  Unfortunately, the process
+is not as straightforward. And in the case of some more problematic titles,
+you'll need to use the terminal. But, I'll guide you through that too, so don't
+be afraid. 
+
+To handle your non-steam library, I'd highly recommend checking out Lutris.
+It's a free launcher that allows you to easily manage all of your PC titles
+from GOG and the like. Just search for the game or application you want to
+install and run the community-made script to automate installation. Do keep in
+mind that some games have issues while others don't work. Check out the
+community ratings on lutris.net to see if your particular games run or not. 
+
+For advanced Steam Play, check the "Enable Steam Play for all titles" button in
+your Steam settings menu. Doing this will show your entire library and open it
+up for experimentation. Before you jump in, I'd strongly recommend referencing
+ProtonDB, a community-curated list of compatibility ratings. These range from
+flawless out of the box, to completely borked, so it really depends on the
+title.
+
+More often than not, if a game isn't outright broken by DRM or anticheat, it'll
+usually runs with some tweaks. These can be as simple as renaming a launcher or
+moving some files, to as complicated as using proton/winetricks to fix the
+product key verification for Age of Empires 3, or enabling a virtual desktop
+for Sleeping Dogs and shuffling it between workspaces.  
+
+Some other community-made tools to help you out are Protontricks and
+mf-install. The former is a wrapper script that simplifies setting up
+Winetricks for Steam games, while the latter adds in support for Media
+Foundation, letting you play some otherwise broken games like Blasphemous.
+
+Setting these up does require me to explain the terminal to you. If that's
+something you'd rather not deal with, I'd recommend sticking to native and
+whitelisted games.  
+
+Using the super key, launch the terminal. Some distros have this mapped to a
+shortcut, like super + T. Once you've launched the terminal, you'll see a
+prompt, usually your username followed by your computer's hostname.  In my
+case, it's squidthesid@solaire. 
+
+After that, you'll notice a tilde, or squigly line. This is a shorthand for
+your home directory (/home/yourusername). There are other major system
+directories, but it's not necessary to go into those for the scope of this
+video. 
+
+To see all of the files and folders in the current directory, type in the
+command "ls". You'll notice that folders will have a different highlight color
+from files. Now, this isn't all you can do with the "ls" command. If you want
+to view hidden files or folders (these have a period proceeding any text) add
+in the -a option after you type in "ls" but before you enter the command in.
+The full string should be "ls -a". Notice that a lot more files have appeared
+here. These hidden folders generally contain configuration files that you can
+use to alter applications. For now, it's not something you need to be concerned
+about. Additionally, you can enter in arguments for certain commands. an
+argument will trail after the main command and any relevant options. For
+example, if type in "ls -l testfile", the terminal will output a detailed list
+of information about the testfile, including permissions, file size, date of
+creation, and so on. 
+
+If you ever forget what a command is or don't know what its options or
+arguments are, then be sure to memorize the "man" command. By typing in man
+before any command you execute (think of the command you want information on as
+an argument), you can pull up the manual page for said command.  So if I type
+in "man ls", the manual page will appear, showing me a brief description of the
+command, how it's used, and all of the options available. Here, we can see -a
+clearly. To navigate, use the spacebar to go down the page, and the "b" key to
+go back up. Once you're done looking at information, press the "q" key to exit
+back to the main terminal screen. An alternative option if you want a more
+concise list of information or if a man page does not exist is to use the
+--help option, with no arguments. I personally prefer manpages, but pick
+whichever you like better. 
+
+Now, to navigate between directories, you need to use the "cd" command. To go
+down a specific folder, type in cd followed by that folder's name. So to go
+into my documents folder, I'd type in "cd Documents". To go up to a higher
+directory (i.e. the opposite direction you came from), type in "cd ..". Notice
+that I'm back in my home directory, and I can see that Documents is a
+subdirectory of home. You can also chain these commands together, so if you
+want to access a subfolder two levels deep, you can type in the full path,
+separated by slashes. For example, to go to the TestFolder in my Documents
+folder from my home directory, I would type in "cd Documents/TestFolder". To go
+up two levels to my home directory, I would simply use "cd ../..". At any time,
+if you want to ever access the home directory, you can type in cd with no
+arguments or options, and you'll be taken directly there. 
+
+So using this information, we can now find the Steam directory and the games
+we've installed. In my case, it's located in
+.var/app/com.valvesoftware.Steam/.local/share/Steam, but it depends on the
+install. I've seen it as a hidden folder simply called .Steam.  If you're
+unsure of where it is, you can use the find command. Type in find followed by a
+single period as an argument (a single period refers to the current directory,
+so if we're in home, it's ~). After that, use the -iname function, which does a
+case insenstive search based on whatever query you're looking for. Again, you
+can refer to find's man page at any time if you're confused. 
+
+Now cd into the Documents folder. If you ever forget what folders are in the
+current path, you can double press tab to show what's there. A single tab press
+will autocomplete the command, if possible. 
+
+We're going to setup mf-install and protontricks. While you can manually
+download and unpack the releases, I find it more convenient to use git.  If you
+do not have git installed, please download it from your software center.
+Alternatively, you can use the package manager in terminal. To install any
+program, you need to have superuser or root permissions. To run an elevated
+command, you'd need to put sudo before it and enter your password when you
+execute it. So if I want to install git on Ubuntu, I would do "sudo" followed
+by the name of the package manager (Ubuntu's is called "apt") then "install",
+and concluding with the name of the package you want to download. So to install
+git, we would do "sudo apt install git". If you want to install multiple
+packages at once, separate their names with a blankspace. If you don't know the
+name of the program you want, you can use the search command built into the
+package manager. On Ubuntu, that would be "apt search git", and it will list
+all of the packages containing git. 
+
+While version control is a very complicated beast, we're only going to use git
+to clone (or "copy") the online repos that we want. In your web browser, click
+on the green button that says "clone or download" on the github page. Copy the
+url and paste it in your terminal following these commands "git clone". Do note
+that in the terminal, you need to hold shift to paste with a hotkey, as the
+shell will interpret Ctrl V and Ctrl C as commands otherwise. So to paste the
+url, we'd use Ctrl + Shift + V. So the full command to clone protontricks is
+"git clone https://github.com/Matoking/protontricks.git". This will download a
+copy of that repository into your current folder.
+
+To install protontricks, we need to have the pre-requisite packages, so install
+those based on what distro you have.  For Ubuntu, it's "sudo apt install
+python3-pip python3-setuptools python3-venv". Follow the commands listed for
+pipx to install protontricks. 
+
+Let's try fixing Age of Empires 3 now. We can see that we need to use
+protontricks to install the missing requirements. Do Protontricks -s Age of
+Empires 3 to pull up the game's application id. Following that, use
+protontricks 105450 (AoE'3 steam app id) mfc42 windxp l3codecx. Once you've
+done that, you can now relaunch the game. Notice that the broken CD-key
+activation screen now works!  In general, this is how you're going to be fixing
+your games, but be sure to consult ProtonDB for each specific title. 
+
 Part 5: Conclusion 
+
+Well, thank you guys for watcjomg. I hope this video was helpful to you in
+figuring out if Linux is for you. There's definitely a learning curve, but just
+keep at it and continue using it. You'll get more comfortable with the terminal
+and like. And don't forget that there's a massive community eager to help out
+noobs (such as the linux4noobs sub-reddit). Regarding future videos, the
+holidays are now over, so I'm ready to get back into production. The next video
+will be on Jamestown Plus, followed by some other smaller games I've played
+recently. Saya no Uta and DUSK are still happening, but those got pushed to the
+backburner due to life. I still want to talk about them, so they will happen,
+but I don't know when they'll be out. 
+
+If you'd like to follow channel news, you can join the Squidcord discord server
+or follow me on Twitter @SquidTheSid1 to see upcoming announcements. Finally,
+if you'd like to be absolved of all guilt from using an ad blocker, you can
+financially support the channel by becoming a YouTube member or joining my
+Patreon page. I've recently added in a new tier, so it should be more
+accessible to everyone now. Every little bit of help puts me one step close
+towards making this dream into a full time career.
+
+As always, stay frosty. 
