@@ -2,25 +2,23 @@ Switching to Linux (From Windows) in 2020.
 
 So, the new decade's arrived and Windows 7's end of life approaches on January
 14. As a holdout poweruser, you now have to make a tough decision.  Continue
-using an unsupported operating system and hope nothing goes wrong or
-begrudgingly make the switch to Windows 10, with neither choice being
-particularly great. Thankfully, you also have a third option: switch to Linux.
-That way, you'll still get up-to-date software while not having to deal with
-Microsoft's current bullshit. 
+using an unsupported operating system or begrudgingly make the switch to
+Windows 10, with neither choice being particularly great. Thankfully, you also
+have a third option: switch to Linux.  This way, you'll still get up-to-date
+software while not having to deal with Microsoft's current bullshit. 
 
 So if you've heard about Linux in the past and want to make the jump soon, I'll
-be guiding you through all of the necessary steps to get your system running
-and ready for gaming. 
+be guiding you through all of the steps to get your system running and gaming
+ready. 
 
 Before I get into that, I need to make a disclaimer. Linux is not Windows. It's
-a completely different operating system with its own design philosophies and
-nuances. So forget what you already know about Windows and come into Linux with
-an open mind, ready to relearn some of the basics. Now, you don't need to
-become a system administrator, but a brief understanding of how your computer
-works will make your life a lot easier, especially when troubleshooting.
-Strictly speaking, this isn't necessary and you can stick entirely to graphical
-menus, but I recommend learning the essentials so you can play more games and
-further customize your desktop experience.     
+a completely different operating system with its own nuances. So forget what
+you already know about Windows and come into Linux with an open mind, ready to
+learn the basics. Now, you don't need to become a system administrator, but a
+brief understanding of how your computer works will make your life a lot
+easier.  Strictly speaking, this isn't necessary and you can stick entirely to
+graphical menus, but I recommend learning the essentials so you can play more
+games and further customize your desktop experience.     
 
 Part 0: Reasons Why
 
@@ -31,36 +29,34 @@ concise, so I'll avoid going into overly technical details.
 Windows 10 is a Hackintosh. If you're like me and despise Microsoft's trashfire
 of an operating system, then Linux is your only real alternative for PC gaming.
 Another benefit here is that anti-virus is generally not needed, due to Linux
-having stricter file permissions system amd software repositories. As a result,
-you don't need to worry about Norton or McAfee hogging up resources that could
-be otherwise used for a game. 
+having stricter file permissions system and robust software repositories. As a
+result, you don't need to worry about a virus scan hogging up resources that
+could be otherwise used for a game. 
 
 2). Linux is completely free. You can legally download it at no cost and use it
-how you see fit, without dealing with Microsoft's licensing and arcane terms of
-service. For all intents and purposes, every version of Linux is considered a
-"genuine" copy, so you don't need to deal with that headache. Another thing to
-consider here is that important poweruser features aren't locked behind another
-paywall ( like Windows 10's offline bitlocker support and the group policy
-editor).  
+how you see fit, without dealing with Microsoft's arcane licensing and terms of
+service. Another thing to consider here is that important poweruser features
+aren't locked behind another paywall ( like Windows 10's offline bitlocker
+support and the group policy editor).  
 
 
-3). Linux generally has no bloatware. You install it without receiving constant
-advertisements for candy crush saga or dealing with cortana's constant nagging.
-And don't even get me started on all of the obnoxious telemetry baked into
-Windows 10 by default. While you can disable those to an extent if you're on a
-Pro version or higher, it's extremely annoying to get rid of all of the
-pre-installed crap, as you have to mess around with the group policy editor,
-batch scripts, host files, and so on. Even then, Microsoft can add everything
-back in a future update, so get ready to deal with lots of uphill battles. On
-the other hand, Linux respects you by default and doesn't make you jump through
-hoops to have some peace of mind. 
+3). Linux generally has no bloatware. You can install it without receiving
+constant advertisements for candy crush saga or dealing with cortana's constant
+nagging. Oh, and let's not forget all of the obnoxious telemetry baked into
+Windows 10. While you can disable these to an extent if you're on a Pro version
+or higher, it's extremely annoying to get rid of all of the pre-installed crap,
+as you have to mess around with the group policy editor, batch scripts, host
+files, and so on. Even then, Microsoft can add everything back in a future
+update, so get ready to deal with lots of headaches. On the other hand, Linux
+respects you by default and doesn't make you jump through hoops to have some
+peace of mind. 
 
 4). Linux is everywhere. Though you might not see it on your desktop, it's the
 backbone of the internet, with Google, Amazon, and Facebook's servers running
 off of it. Teslas and Toyotas use automotive grade linux. If you have an
-Android phone, that runs off of linux. As a result of its wide enterprise use,
-there's a very good chance that your hardware will be supported out of the box,
-even if it's a more obscure piece of tech.
+Android phone, that runs off of linux. As a result of Linux's wide enterprise
+usage, there's a very good chance that your hardware will be supported out of
+the box, even if it's a more obscure piece of tech.
 
 That's not to say that Linux doesn't have its downsides, the major one being
 software support. While WINE is a great way to run Windows-exclusive programs,
@@ -68,7 +64,7 @@ you might encounter software bugs that aren't on Microsoft's platform. There
 are also applications that flat out refuse to work. I haven't noticed many of
 these beyond games with anticheat or DRM, but they do exist. So if you have a
 particular piece of software that does not work on Linux, it might be worth
-keeping around a Windows partition for that.
+keeping around a Windows partition on another drive for that.
 
 Part 1: Selecting Your Distro
 
@@ -80,49 +76,37 @@ collectively as distributions. While these "distros" function similarly under
 the hood, they can vary drastically in their included software, update cycles,
 and desktop experiences. With such a large selection to pick from, I'm going to
 be curating my list to only include a handful of distros that I find to be
-extremely user friendly. So I won't be discussing more advanced options like
-Arch, Void, or Gentoo. 
+extremely user friendly. 
 
-The first recommendation I have is Pop!_OS. It's based on Ubuntu, but includes
-some great quality of life tweaks provided by its developer, System 76. The
-default desktop environment is called GNOME 3, which offers up a rather unique
-user experience.  If you're not a fan, then you can install extensions to change
-functionality, such as adding in a more traditional start menu or a window bar.
-I will be listing some of these in their respective section as well as describe
-how to install them. 
+The first recommendation I have is Pop!_OS. It's based on the popular Ubuntu
+distro, but includes some great quality of life tweaks provided by its
+developer, System 76. The default desktop environment is called GNOME, which
+offers up a rather unique user experience.  If you're not a fan, then you can
+install extensions to change functionality, such as adding in a more
+traditional start menu or a window bar.  
 
 The second recommendation is Solus. Unlike Pop!_OS, it's a completely
 independent distribution that seeks to offer a curated desktop experience. Its
 flagship desktop enviroment is budgie, which offers a more traditional user
 interface than GNOME. This is my distro of choice, and my daily driver. It is
 leaner on software support than Ubuntu, but I find it to have the essentials,
-which tend to be more up to date. 
+which tend to be more up to date due to Solus' more frequent update cycle. 
 
 Finally, I'll be covering Linux Mint. Out of all the distros mentioned on this
-list, it offers up an experience most similar to Windows 7. So if you don't
-want to have to deal with GNOME or want a more robust software repository, then
-Mint is a great choice. 
+list, it offers up the experience most similar to Windows 7. So if you don't
+want to have to deal with GNOME or want a more robust software repository than
+what Solus offers, then Mint is a great choice. 
 
-Of course, there are many other fantastic flavors of Linux out there, such as
-Manjaro or Kubuntu, but I'll focus on those three for now, to keep this video
-rather accessible. 
+Of course, there are many other fantastic choices out there, such as Manjaro or
+Kubuntu, but I'll focus on those three for now, to keep this video rather
+accessible. 
 
 Part 2: Setup.
 
 To get started, all you need is a spare flash drive and an internet connection.
 For advanced users, you can go ahead and configure options in your
-motherboard's BIOS right now. I'd recommend disabling secure
-boot, so you don't run into any problems with that later on.  
-
-For me, I had press the delete key to enter my BIOS menu when booting my
-computer. A single press should be sufficient when you see your manufacturer
-splash screen logo, but it doesn't hurt to mash it. Once there, enter your
-settings menu, go to the security tab, and make sure that the trusted computing
-or secure boot option is disabled. This will vary from motherboard to
-motherboard, so you might have to look around for a bit. You can also change
-device boot priority while in your BIOS, so a flash drive can have precedence
-over a hard drive, though this is not necessary. Save your changes and then
-reboot your computer.  
+motherboard's BIOS right now. I'd recommend disabling secure boot, so you don't
+run into any problems with that later on.  
 
 Now, while in Windows, navigate to the website of your linux distro
 of choice. Pop OS is located on system76.com/pop, Linux Mint is on
@@ -149,67 +133,76 @@ your iso file, then your thumb drive, and proceed to flashing.
 
 Once you've finished with that, restart your computer. When you see the splash
 screen, hit the F11 key to enter the boot menu.  From here on, you can select
-your linux flash drive to boot on instead of your Windows installation. If you
-haven't adjusted boot priority in the BIOS, then you will load into Windows by
-default, so do not forget to do this step. 
+your linux flash drive to boot on instead of your Windows installation. 
+
+
+If you're an advanced user, you can skip this step on start by adjusting your
+boot priority in the motherboard's BIOS. To access it,  press the delete key
+when you see your manufacturer splash screen logo, but it doesn't hurt to mash
+it. Once there, you should see a graphical list of icons. Move your Linux drive
+ahead of your Windows one, and you should be good to go. If you want to disable
+Secure Boot, enter your settings menu, go to the security tab, and make sure
+that the trusted computing platform option is disabled (this can be called many
+things, but they should be some variation of "secure boot". Save your changes
+and then reboot your computer.  
 
 Now, my motherboard manufacturer is MSI. Different companies can assign
 different hotkeys to the boot and BIOS menu, so be sure to consult your manual
 if they're not listed on the splash screen.
 
 After a short wait, you're taken into a live desktop environment. From here,
-you can play around with the UI and get used to it before making any
-committments. If you like what you've seen, then click the install icon and
-walk through the installer. You're generally given the option to select if you
-want to create a new Linux partition to coexist with your Windows install, or
-dedicate the entire drive to Linux. Generally, it's a bit easier to do the
-latter option, but you lose all existing data on the drive.
+you can play around with the UI and get used to it before making any changes.
+If you like what you've seen, then click the install icon and walk through the
+installer. You're generally given the option to select if you want to create a
+new Linux partition to coexist with your Windows install, or dedicate the
+entire drive to Linux. Choosing the latter option will wipe all existing data
+on the drive.
 
-I'll be doing the second option since it's easier to show off, so if you'd like
-to follow along, be sure to back up all of your important files to another
-drive or to the cloud. Alternatively, you can select to create a Linux
-partition alongside your current install instead of doing a clean start. 
+For me, I'll be creating a dedicated Linux install since I'm using Windows on a
+virtual machine, so if you'd like to follow along, be sure to back up all of
+your important files to another computer or to the cloud. Alternatively, you
+can select to create a Linux partition alongside your current install instead
+of doing a clean start. 
 
 Once you've finished customizing all of your option the graphical installer and
 rebooted your computer, you now have a brand new Linux machine. Feel free to
 play around with it and tweak your settings to your heart's content. 
 
 From this point on, I'll be splitting the video into two more sections. The
-next one will focus exclusively on gaming-related steps, while the following
-section will focus on advanced Linux information such as file tree hierachies,
-software repositories, and package managers. Feel free to skip the sections
-that aren't relevant to you. 
+next one will focus on basic steps to gaming on Linux, while the following
+section will focus on more advanced concepts such as software repositories,
+terminal commands, and package managers. Feel free to skip the sections that
+aren't relevant to you. 
 
 Part 3: Basic Gaming
 
 This section explains how to keep your software updated, install  drivers (for
-Nvidia users), and setup Steam.  We'll also cover Steam play, but will only
-talk about officially whitelisted titles alongside native games.  
+Nvidia users), and setup Steam.  We'll also cover native ports and Steam play
+(Windows games running on Linux), but I'll only talk about officially
+whitelisted titles.
 
-Press the Windows key to launch the start menu (note: in Linux, this key is
-referred to as the super key).  From here, type in "software" and you should
-see something along the lines of Software Center or Software Manager appear. 
-
+Press the Windows key to launch the start menu (note: this key is referred to
+as the super key in Linux).  From here, type in "software" and you should see
+something along the lines of Software Center or Software Manager appear.
 Unlike on Windows, all of your software should be located and installed from
 this repository. That way, you can easily keep all of your programs up to date,
 and search for new ones as necessary. The concept of downloading an exe file
 online and installing it manually doesn't really exist on linux, so get used to
 finding all of your software here. There are other ways to install and manage
-your programs on Linux, but I'd only recommend looking into that if you're a
-more advanced user. 
+your programs, but I'd only recommend looking into that if you're a more
+advanced user. 
 
-Now comes the point where you need to manager your drivers. If you use Intel
-and/or AMD hardware, then all you need to do is keep your Linux install
-up-to-date, as their drivers are included directly in system updates.
-Specifically, they're located in the linux kernel, so make sure that isn't too
-out of date. Nvidia users don't have it quite as easy, as their drivers aren't
-directly integrated into the operating system. By default, you should have
-something like the nouveau driver installed. While this is fine for browsing
-the net or watching videos, it's not suited for gaming. So you'll need to
-install the correct proprietary driver. Doing so manually isn't recommended due
-to how many choices you have. I'd recommend using your system's hardware
-drivers utility to automatically install the correct nvidia driver as it's the
-least painful way of doing so.
+Now comes the point where you need to manager your hardware drivers. If you use
+Intel and/or AMD, then all you need to do is keep your operating system
+up-to-date, as their drivers are included directly in updates.  Specifically,
+they're located in the linux kernel, so make sure that isn't too out of date.
+Nvidia users don't have it quite as easy, as their drivers aren't directly
+integrated. By default, you should have something like the nouveau driver
+installed. While this is fine for browsing the net or watching videos, it's not
+suited for gaming. So you'll need to install the correct proprietary driver.
+Doing so manually isn't recommended due to how many choices you have. I'd
+recommend using your system's hardware drivers utility to automatically install
+the correct one as it's the least painful way of doing so.
 
 Once you've updated your programs, it's time to get Steam setup. Thankfully,
 it's handily located in most software repositories, so all you need to do is
@@ -237,79 +230,74 @@ It's a free launcher that allows you to easily manage all of your PC titles
 from GOG and the like. Just search for the game or application you want to
 install and run the community-made script to automate installation. Do keep in
 mind that some games have issues while others don't work. Check out the
-community ratings on lutris.net to see if your particular games run or not. 
+community ratings on lutris.net to see if your particular titles run or not. 
 
 For advanced Steam Play, check the "Enable Steam Play for all titles" button in
 your Steam settings menu. Doing this will show your entire library and open it
 up for experimentation. Before you jump in, I'd strongly recommend referencing
 ProtonDB, a community-curated list of compatibility ratings. These range from
-flawless out of the box, to completely borked, so it really depends on the
-title.
+working flawlessly out of the box, to completely borked, so it really depends
+on the game.
 
-More often than not, if a game isn't outright broken by DRM or anticheat, it'll
-usually runs with some tweaks. These can be as simple as renaming a launcher or
-moving some files, to as complicated as using proton/winetricks to fix the
-product key verification for Age of Empires 3, or enabling a virtual desktop
-for Sleeping Dogs and shuffling it between workspaces.  
+More often than not, if a title isn't outright broken by DRM or anticheat,
+it'll usually runs with some tweaks. These can be as simple as renaming a
+launcher or moving some files, to as complicated as using proton/winetricks to
+fix the issue, such as accessing the product key verification for Age of
+Empires 3, or enabling a virtual desktop for Sleeping Dogs and shuffling it
+between workspaces to get past a white screen on launch.  
 
 Some other community-made tools to help you out are Protontricks and
 mf-install. The former is a wrapper script that simplifies setting up
 Winetricks for Steam games, while the latter adds in support for Media
 Foundation, letting you play some otherwise broken games like Blasphemous.
-
 Setting these up does require me to explain the terminal to you. If that's
 something you'd rather not deal with, I'd recommend sticking to native and
-whitelisted games.  
+whitelisted titles.  
 
 Using the super key, launch the terminal. Some distros have this mapped to a
-shortcut, like super + T. Once you've launched the terminal, you'll see a
-prompt, usually your username followed by your computer's hostname.  In my
-case, it's squidthesid@solaire. 
+shortcut, like super + T. Once you've launched it, you'll see a prompt, usually
+your username followed by your computer's hostname.  In my case, it's
+squidthesid@solaire. After that, you'll notice a tilde, or squigly line. This
+is shorthand for your home directory (/home/yourusername). There are other
+major system directories, but it's not necessary to talk about those for the
+scope of this video. 
 
-After that, you'll notice a tilde, or squigly line. This is a shorthand for
-your home directory (/home/yourusername). There are other major system
-directories, but it's not necessary to go into those for the scope of this
-video. 
-
-To see all of the files and folders in the current directory, type in the
-command "ls". You'll notice that folders will have a different highlight color
-from files. Now, this isn't all you can do with the "ls" command. If you want
-to view hidden files or folders (these have a period proceeding any text) add
+To see all of the files and folders in the current location, type in the
+command "ls". You'll notice that folders will have a different color from
+files. Now, this isn't all you can do with the "ls" command. If you want to
+view hidden files or folders (these have a period proceeding any text/name) add
 in the -a option after you type in "ls" but before you enter the command in.
 The full string should be "ls -a". Notice that a lot more files have appeared
-here. These hidden folders generally contain configuration files that you can
-use to alter applications. For now, it's not something you need to be concerned
-about. Additionally, you can enter in arguments for certain commands. an
-argument will trail after the main command and any relevant options. For
-example, if type in "ls -l testfile", the terminal will output a detailed list
-of information about the testfile, including permissions, file size, date of
-creation, and so on. 
+here.  These hidden folders generally contain configuration files that you can
+use to tweak applications. For now, it's not something you need to be concerned
+about.  Additionally, you can enter in arguments for certain commands, trailing
+after the main one and its relevant options. For example, if type in "ls -l
+testfile", the terminal will output a detailed list of information about the
+testfile, including permissions, file size, date of creation, and so on. 
 
 If you ever forget what a command is or don't know what its options or
 arguments are, then be sure to memorize the "man" command. By typing in man
-before any command you execute (think of the command you want information on as
-an argument), you can pull up the manual page for said command.  So if I type
-in "man ls", the manual page will appear, showing me a brief description of the
-command, how it's used, and all of the options available. Here, we can see -a
-clearly. To navigate, use the spacebar to go down the page, and the "b" key to
-go back up. Once you're done looking at information, press the "q" key to exit
-back to the main terminal screen. An alternative option if you want a more
-concise list of information or if a man page does not exist is to use the
---help option, with no arguments. I personally prefer manpages, but pick
-whichever you like better. 
+before any command you execute (in a way, they become arguments to man), you
+can pull up the relevant manual page.  So if I type in "man ls", the manual
+page will appear, showing me a brief description of the command, how it's used,
+and all of the options available. Here, we can see -a clearly. To navigate
+around, use the spacebar to go down the page, and the "b" key to go back up.
+Once you're done looking at information, press the "q" key to exit back to the
+main terminal screen. If a man page does not exist for a command, you can see
+if it has a --help option, with no other arguments.
 
 Now, to navigate between directories, you need to use the "cd" command. To go
 down a specific folder, type in cd followed by that folder's name. So to go
 into my documents folder, I'd type in "cd Documents". To go up to a higher
 directory (i.e. the opposite direction you came from), type in "cd ..". Notice
-that I'm back in my home directory, and I can see that Documents is a
-subdirectory of home. You can also chain these commands together, so if you
-want to access a subfolder two levels deep, you can type in the full path,
-separated by slashes. For example, to go to the TestFolder in my Documents
-folder from my home directory, I would type in "cd Documents/TestFolder". To go
-up two levels to my home directory, I would simply use "cd ../..". At any time,
-if you want to ever access the home directory, you can type in cd with no
-arguments or options, and you'll be taken directly there. 
+that I'm back in my home directory, and I can see that Documents is a nested
+inside home. You can also chain these commands together, so if you want to
+access a subfolder two levels deep, you can type in the full path, separated by
+slashes. For example, to go to the TestFolder in my Documents folder from my
+home directory, I would type in "cd Documents/TestFolder". To go up two levels
+to my home directory, I would simply use "cd ../..". At any time, if you want
+to ever get back to the home directory, you can type in cd with no arguments or
+options.
 
 So using this information, we can now find the Steam directory and the games
 we've installed. In my case, it's located in
@@ -317,9 +305,11 @@ we've installed. In my case, it's located in
 install. I've seen it as a hidden folder simply called .Steam.  If you're
 unsure of where it is, you can use the find command. Type in find followed by a
 single period as an argument (a single period refers to the current directory,
-so if we're in home, it's ~). After that, use the -iname function, which does a
-case insenstive search based on whatever query you're looking for. Again, you
-can refer to find's man page at any time if you're confused. 
+so if we're in home, it's ~. The pwd command will show your current working
+directory). After that, use the -iname option, which does a case insenstive
+search based on whatever query you're looking for. The full command is "find .
+-iname Steam". Again, you can refer to find's man page at any time if you're
+confused. 
 
 Now cd into the Documents folder. If you ever forget what folders are in the
 current path, you can double press tab to show what's there. A single tab press
@@ -332,23 +322,23 @@ Alternatively, you can use the package manager in terminal. To install any
 program, you need to have superuser or root permissions. To run an elevated
 command, you'd need to put sudo before it and enter your password when you
 execute it. So if I want to install git on Ubuntu, I would do "sudo" followed
-by the name of the package manager (Ubuntu's is called "apt") then "install",
-and concluding with the name of the package you want to download. So to install
+by the name of the package manager (Ubuntu's is "apt") then "install", and
+concluding with the name of the package you want to download. So to install
 git, we would do "sudo apt install git". If you want to install multiple
 packages at once, separate their names with a blankspace. If you don't know the
 name of the program you want, you can use the search command built into the
 package manager. On Ubuntu, that would be "apt search git", and it will list
-all of the packages containing git. 
+all of the packages containing git in their name.  
 
-While version control is a very complicated beast, we're only going to use git
+While version control is a very complicated beast, we're only going to use it
 to clone (or "copy") the online repos that we want. In your web browser, click
 on the green button that says "clone or download" on the github page. Copy the
 url and paste it in your terminal following these commands "git clone". Do note
 that in the terminal, you need to hold shift to paste with a hotkey, as the
 shell will interpret Ctrl V and Ctrl C as commands otherwise. So to paste the
-url, we'd use Ctrl + Shift + V. So the full command to clone protontricks is
-"git clone https://github.com/Matoking/protontricks.git". This will download a
-copy of that repository into your current folder.
+url, we'd use Ctrl + Shift + V. So cloning the protontricks repository is "git
+clone https://github.com/Matoking/protontricks.git". This will download a copy
+of it into your current folder.
 
 To install protontricks, we need to have the pre-requisite packages, so install
 those based on what distro you have.  For Ubuntu, it's "sudo apt install
@@ -365,23 +355,25 @@ your games, but be sure to consult ProtonDB for each specific title.
 
 Part 5: Conclusion 
 
-Well, thank you guys for watcjomg. I hope this video was helpful to you in
+Well, thank you guys for watching. I hope this video was helpful to you in
 figuring out if Linux is for you. There's definitely a learning curve, but just
-keep at it and continue using it. You'll get more comfortable with the terminal
-and like. And don't forget that there's a massive community eager to help out
-noobs (such as the linux4noobs sub-reddit). Regarding future videos, the
-holidays are now over, so I'm ready to get back into production. The next video
-will be on Jamestown Plus, followed by some other smaller games I've played
-recently. Saya no Uta and DUSK are still happening, but those got pushed to the
-backburner due to life. I still want to talk about them, so they will happen,
-but I don't know when they'll be out. 
+keep at it. I don't expect everyone to become a master overnight. You'll get
+more comfortable with the terminal as you keep using it. And don't forget that
+there's a massive community eager to help out newcomers (such as the linux4noobs
+sub-reddit). 
 
-If you'd like to follow channel news, you can join the Squidcord discord server
-or follow me on Twitter @SquidTheSid1 to see upcoming announcements. Finally,
-if you'd like to be absolved of all guilt from using an ad blocker, you can
-financially support the channel by becoming a YouTube member or joining my
-Patreon page. I've recently added in a new tier, so it should be more
-accessible to everyone now. Every little bit of help puts me one step close
-towards making this dream into a full time career.
+For channel specific updates, regarding future videos, since the holidays are now
+over, production has picked up. The next video will be on Jamestown Plus,
+followed by some other smaller games I've played recently. Saya no Uta and DUSK
+are still happening, but those got pushed to the backburner. I still want to
+talk about them, so they will happen, but I don't know when they'll be out. 
+
+If you'd like to see all of my announcements, you can join the Squidcord
+discord server or follow me on Twitter @SquidTheSid1 to see upcoming
+announcements. Finally, if you'd like to be absolved of all guilt from using an
+ad blocker, you can financially support the channel by becoming a YouTube
+member or joining my Patreon page. I've recently added in a new tier, so it
+should be more accessible to everyone now. Every little bit of help puts me one
+step close towards making this dream into a full time career.
 
 As always, stay frosty. 
